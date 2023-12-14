@@ -39,6 +39,6 @@ function cambiarUser(){
     localStorage.removeItem("nombre");
     localStorage.removeItem("apellido");
 
-    window.location.href = "ingreso.html"
+    window.location.href = "index.html"
 
 }
