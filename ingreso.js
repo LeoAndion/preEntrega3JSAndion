@@ -30,7 +30,7 @@ function validarUser() {
 var nombreStorage = localStorage.getItem("nombre")
 var apellidoStorage = localStorage.getItem("apellido")
 var bienvenidoDiv = document.getElementById("bienvenida")
-bienvenidoDiv.textContent+= "Hola " + nombreStorage +" "+  apellidoStorage;
+
 
 function cambiarUser(){
     localStorage.removeItem("nombre");
