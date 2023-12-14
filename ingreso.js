@@ -1,6 +1,4 @@
-if(!sessionStorage.getItem("nombre")){
-    Window.location = "/ingreso.html"
-}
+
 
 
 const listaNegra = ["Bobo","Tonto","Apestoso","Banana"];
