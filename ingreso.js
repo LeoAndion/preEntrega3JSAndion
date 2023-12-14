@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 
-=======
->>>>>>> 3c9f545858724b396f6fe7acecf10f92422de964
 
 
 const listaNegra = ["Bobo","Tonto","Apestoso","Banana"];
@@ -34,7 +31,7 @@ function validarUser() {
 var nombreStorage = localStorage.getItem("nombre")
 var apellidoStorage = localStorage.getItem("apellido")
 var bienvenidoDiv = document.getElementById("bienvenida")
-
+bienvenidoDiv.textContent+= "Hola " + nombreStorage +" "+  apellidoStorage;
 
 function cambiarUser(){
     localStorage.removeItem("nombre");
