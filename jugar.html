@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="#" />
+    
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+    <title>Batalla</title>
+</head>
+<body class="campoBatalla">
+        <header>
+          <audio autoplay controls loop>
+            <source src="assets/musicBatalla.mp3" type="audio/mpeg">
+          </audio>
+
+        </header>
+        <main class="container">
+
+          <h1 class="text-center">Selector de Pokémon</h1>
+          <div class="row">
+  
+              <div class="col-md-6 text-center">
+                  <label for="selector1">Selecciona un Pokémon:</label><br>
+                  <select id="selector1">
+                      <option value="">Selecciona...</option>
+                      <option value="Bulbasur">Bulbasur</option>
+                      <option value="Charmander">Charmander</option>
+                      <option value="Pikachu">Pikachu</option>
+                      <option value="Snorlax">Snorlax</option>
+                      <option value="Mailo">Mailo</option>
+                      <option value="Lala">Lala</option>
+                  </select>
+              </div>
+  
+              <div class="col-md-6 text-center">
+                  <label for="selector2">Selecciona otro Pokémon:</label><br>
+                  <select id="selector2">
+                      <option value="">Selecciona...</option>
+                      <option value="Bulbasur">Bulbasur</option>
+                      <option value="Charmander">Charmander</option>
+                      <option value="Pikachu">Pikachu</option>
+                      <option value="Snorlax">Snorlax</option>
+                      <option value="Mailo">Mailo</option>
+                      <option value="Lala">Lala</option>
+                  </select>
+              </div>
+          </div><br>
+
+          <div class="text-center">
+          <button type="submit" class="btn btn-primary" onclick="Luchar()">Luchar</button><br><br>
+        </div>
+
+        
+
+        <div class="row">
+          
+          <div class="col-md-6 text-center" id="informacionPokemon1"></div><br>
+          <div class="col-md-6 text-center" id="informacionPokemon2"></div>
+
+          
+       
+        </div><br><br>
+
+        <div class="text-center">
+
+          <div id="btnPkmn"  class="oculto">
+            <button type="submit" class="btn btn-primary" onclick="atacar()">Atacar</button>
+            <button type="submit" class="btn btn-primary" onclick="huir()">Huir</button>
+          </div>
+        </div>
+
+        <DIV id="panelData" class="panelInfo">
+
+          
+      </DIV>
+          
+
+          
+
+
+         
+
+    </main>
+    <div class="container.sm">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+            <li class="nav-item"><a href="modificar.html" class="nav-link px-2 text-body-secondary">Modificar PKMN</a></li>
+            <li class="nav-item"><a href="api.html" class="nav-link px-2 text-body-secondary">API</a></li>
+            <li class="nav-item"><a href="datos.html" class="nav-link px-2 text-body-secondary">DATOS</a></li>
+            
+          </ul>
+          <p class="text-center text-body-secondary">© 2023 Leonardo Andion CH</p><br>
+          <p class="text-center text-body-secondary">
+            <a class="icon-link icon-link-hover text-center" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://facebook.com/leonardo.r.andion/">
+              <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+              Facebook
+            </a>
+            <a class="icon-link icon-link-hover text-center" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://www.instagram.com/leonardoandion/">
+              <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+              Instagram
+            </a>
+            <a class="icon-link icon-link-hover text-center" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://www.linkedin.com/in/leonardo-andion-59a3a814a/">
+              <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+              linkedin
+            </a>
+          </p>
+        </footer>
+      </div>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="pokemon.js"></script>
+  <script src="batalla.js"></script>
+ 
+</body>
+</html>

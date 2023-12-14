@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+    <title>Modificar-Crear</title>
+</head>
+<body>
+        <header>
+           
+            <div class="col-12 p-md-5">
+                <div class="text-center">
+                   
+                    <div class="msjBienvenida" id="bienvenida">  </div>
+                    <div>
+                        <DIV class="comoModificar">
+
+                            El promedio total de las 3 estadisticas debe ser 180<br>
+                            Ejemplo 60-60-60
+                        </DIV>
+           
+                     <button onclick="cambiarUser()" class="btn btn-primary">Cambiar de Usuario</button>
+                     <a href="index.html" class="btn btn-primary">Volver inicio</a>
+                </div>
+              </div>
+
+        </header>
+        <main>
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-md-6" onsubmit="return modificarPokemon()">
+                        <div class="pkmn-box">
+                            <div class="row">
+                                <div class="col-6">
+                                    <span id="nombreBulbasur">  </span>
+                                </div>
+                                <div class="col-6">
+                                    <img src="assets/Bulbasaur.png" class="c-img">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="nuevoAtaqueBulbasur">Nuevo Ataque:</label><br>
+                                    <input type="number" id="nuevoAtaqueBulbasur" name="nuevoAtaqueBulbasur"><br>
+                    
+                                    <label for="nuevaDefensaBulbasur">Nueva Defensa:</label><br>
+                                    <input type="number" id="nuevaDefensaBulbasur" name="nuevaDefensaBulbasur"><br>
+                    
+                                    <label for="nuevaVelocidadBulbasur">Nueva Velocidad:</label><br>
+                                    <input type="number" id="nuevaVelocidadBulbasur" name="nuevaVelocidadBulbasur"><br>
+                    
+                                    <button type="submit" class="btn btn-primary" onclick="modificarPokemon(pokemones.Bulbasur, 'nuevoAtaqueBulbasur', 'nuevaDefensaBulbasur', 'nuevaVelocidadBulbasur')">Modificar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="col-md-6" onsubmit="return modificarPokemon()">
+                        <div class="pkmn-box">
+                            <div class="row">
+                                <div class="col-6">
+                                    <span id="nombreCharmander">CHARMANDER</span>
+                                </div>
+                                <div class="col-6">
+                                    <img src="assets/Charmander.png" class="c-img">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="nuevoAtaqueCharmander">Nuevo Ataque:</label><br>
+                                    <input type="number" id="nuevoAtaqueCharmander" name="nuevoAtaqueCharmander"><br>
+                    
+                                    <label for="nuevaDefensaCharmander">Nueva Defensa:</label><br>
+                                    <input type="number" id="nuevaDefensaCharmander" name="nuevaDefensaCharmander"><br>
+                    
+                                    <label for="nuevaVelocidadCharmander">Nueva Velocidad:</label><br>
+                                    <input type="number" id="nuevaVelocidadCharmander" name="nuevaVelocidadCharmander"><br>
+                    
+                                    <button type="submit" class="btn btn-primary" onclick="modificarPokemon(pokemones.Charmander, 'nuevoAtaqueCharmander', 'nuevaDefensaCharmander', 'nuevaVelocidadCharmander')">Modificar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6" onsubmit="return modificarPokemon()">
+                        <div class="pkmn-box">
+                            <div class="row">
+                                <div class="col-6">
+                                    <span id="nombreSnorlax">SNORLAX</span>
+                                </div>
+                                <div class="col-6">
+                                    <img src="assets/Snorlax.png" class="c-img">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="nuevoAtaqueSnorlax">Nuevo Ataque:</label><br>
+                                    <input type="number" id="nuevoAtaqueSnorlax" name="nuevoAtaqueSnorlax"><br>
+                                    
+                                    <label for="nuevaDefensaSnorlax">Nueva Defensa:</label><br>
+                                    <input type="number" id="nuevaDefensaSnorlax" name="nuevaDefensaSnorlax"><br>
+                                    
+                                    <label for="nuevaVelocidadSnorlax">Nueva Velocidad:</label><br>
+                                    <input type="number" id="nuevaVelocidadSnorlax" name="nuevaVelocidadSnorlax"><br>
+                                    
+                                    <button type="submit" class="btn btn-primary" onclick="modificarPokemon(pokemones.Snorlax, 'nuevoAtaqueSnorlax', 'nuevaDefensaSnorlax', 'nuevaVelocidadSnorlax')">Modificar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6" onsubmit="return modificarPokemon()">
+                        <div class="pkmn-box">
+                            <div class="row">
+                                <div class="col-6">
+                                    <span id="nombrePikachu">PIKACHU</span>
+                                </div>
+                                <div class="col-6">
+                                    <img src="assets/Pikachu.png" class="c-img">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="nuevoAtaquePikachu">Nuevo Ataque:</label><br>
+                                    <input type="number" id="nuevoAtaquePikachu" name="nuevoAtaquePikachu"><br>
+                    
+                                    <label for="nuevaDefensaPikachu">Nueva Defensa:</label><br>
+                                    <input type="number" id="nuevaDefensaPikachu" name="nuevaDefensaPikachu"><br>
+                    
+                                    <label for="nuevaVelocidadPikachu">Nueva Velocidad:</label><br>
+                                    <input type="number" id="nuevaVelocidadPikachu" name="nuevaVelocidadPikachu"><br>
+                    
+                                    <button type="submit" class="btn btn-primary" onclick="modificarPokemon(pokemones.Pikachu, 'nuevoAtaquePikachu', 'nuevaDefensaPikachu', 'nuevaVelocidadPikachu')">Modificar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                  
+                    <div class="col-md-6" onsubmit="return modificarPokemon()">
+                        <div class="pkmn-box">
+                            <div class="row">
+                                <div class="col-6">
+                                    <span id="nombreMailo">MAILO</span>
+                                </div>
+                                <div class="col-6">
+                                    <img src="assets/Mailo.png" class="c-img">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="nuevoAtaqueMailo">Nuevo Ataque:</label><br>
+                                    <input type="number" id="nuevoAtaqueMailo" name="nuevoAtaqueMailo"><br>
+                    
+                                    <label for="nuevaDefensaMailo">Nueva Defensa:</label><br>
+                                    <input type="number" id="nuevaDefensaMailo" name="nuevaDefensaMailo"><br>
+                    
+                                    <label for="nuevaVelocidadMailo">Nueva Velocidad:</label><br>
+                                    <input type="number" id="nuevaVelocidadMailo" name="nuevaVelocidadMailo"><br>
+                    
+                                    <button type="button" class="btn btn-primary" onclick="modificarPokemon(pokemones.Mailo, 'nuevoAtaqueMailo', 'nuevaDefensaMailo', 'nuevaVelocidadMailo')">Modificar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="col-md-6" onsubmit="return modificarPokemon()">
+                        <div class="pkmn-box">
+                            <div class="row">
+                                <div class="col-6">
+                                    <span id="nombreLala">LALA</span>
+                                </div>
+                                <div class="col-6">
+                                    <img src="assets/Lala.png" class="c-img">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <label for="nuevoAtaqueLala">Nuevo Ataque:</label><br>
+                                    <input type="number" id="nuevoAtaqueLala" name="nuevoAtaqueLala"><br>
+                    
+                                    <label for="nuevaDefensaLala">Nueva Defensa:</label><br>
+                                    <input type="number" id="nuevaDefensaLala" name="nuevaDefensaLala"><br>
+                    
+                                    <label for="nuevaVelocidadLala">Nueva Velocidad:</label><br>
+                                    <input type="number" id="nuevaVelocidadLala" name="nuevaVelocidadLala"><br>
+                    
+                                    <button class="btn btn-primary" onclick="modificarPokemon(pokemones.Lala, 'nuevoAtaqueLala', 'nuevaDefensaLala', 'nuevaVelocidadLala',)">Modificar</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        
+
+
+
+        </main>
+
+     
+
+
+    
+    <div class="container.sm">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+            <li class="nav-item"><a href="modificar.html" class="nav-link px-2 text-body-secondary">Modificar PKMN</a></li>
+            <li class="nav-item"><a href="api.html" class="nav-link px-2 text-body-secondary">API</a></li>
+            <li class="nav-item"><a href="datos.html" class="nav-link px-2 text-body-secondary">DATOS</a></li>
+            
+          </ul>
+          <p class="text-center text-body-secondary">© 2023 Leonardo Andion CH</p><br>
+          <p class="text-center text-body-secondary">
+            <a class="icon-link icon-link-hover text-center" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://facebook.com/leonardo.r.andion/">
+              <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+              Facebook
+            </a>
+            <a class="icon-link icon-link-hover text-center" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://www.instagram.com/leonardoandion/">
+              <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+              Instagram
+            </a>
+            <a class="icon-link icon-link-hover text-center" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://www.linkedin.com/in/leonardo-andion-59a3a814a/">
+              <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+              linkedin
+            </a>
+          </p>
+        </footer>
+      </div>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="pokemon.js"></script>
+  <script src="ingreso.js"></script>
+</body>
+</html>

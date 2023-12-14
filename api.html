@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+    <title>API</title>
+</head>
+<body>
+        <header>
+          <div class="msjBienvenida" id="bienvenida">  </div>
+         <div>
+
+          <button onclick="cambiarUser()" class="btn btn-primary">Cambiar de Usuario</button>
+
+        </header>
+
+        
+        <main class="container col-12 p-md-5">
+            <div class="text-center">
+
+                <p class="mt-5">CONTADOR DE CLICKS: <br>
+                    <span class="numeroContador" id="contador">0</span></p>
+                <p>La idea es en el futuro a cada click se muestre el pokemon en relacion al numero de la pokedex</p>
+            </div>
+
+            <script src="api.js" defer></script>
+    </main>
+    <div class="container.sm">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Inicio</a></li>
+            <li class="nav-item"><a href="modificar.html" class="nav-link px-2 text-body-secondary">Modificar PKMN</a></li>
+            <li class="nav-item"><a href="api.html" class="nav-link px-2 text-body-secondary">API</a></li>
+            <li class="nav-item"><a href="datos.html" class="nav-link px-2 text-body-secondary">DATOS</a></li>
+            
+          </ul>
+          <p class="text-center text-body-secondary">© 2023 Leonardo Andion CH</p><br>
+          <p class="text-center text-body-secondary">
+            <a class="icon-link icon-link-hover text-center" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://facebook.com/leonardo.r.andion/">
+              <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+              Facebook
+            </a>
+            <a class="icon-link icon-link-hover text-center" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://www.instagram.com/leonardoandion/">
+              <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+              Instagram
+            </a>
+            <a class="icon-link icon-link-hover text-center" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="https://www.linkedin.com/in/leonardo-andion-59a3a814a/">
+              <svg class="bi" aria-hidden="true"><use xlink:href="#clipboard"></use></svg>
+              linkedin
+            </a>
+          </p>
+        </footer>
+      </div>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+ 
+  <script src="ingreso.js"></script>
+</body>
+</html>
