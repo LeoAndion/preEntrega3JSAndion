@@ -24,7 +24,7 @@ function validarUser() {
         localStorage.setItem("apellido", apellido);
         alert("Bienvenido " + nombre);
         
-        window.location.href = "index.html";
+        window.location.href = "index2.html";
 
         return false; 
     }
