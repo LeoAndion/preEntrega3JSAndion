@@ -24,7 +24,7 @@ main{
   margin: 10px;
 }
 img{
-  width: 50px;
+  width: 150px;
   -webkit-animation: heartbeat 3s ease-in-out infinite both;
 	        animation: heartbeat 3s ease-in-out infinite both
 }
@@ -84,6 +84,11 @@ header{
   margin-top: auto;
 }
 
+.pokeApi{
+text-transform: uppercase;
+
+
+}
 
 
 

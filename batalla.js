@@ -54,7 +54,11 @@ function atacar() {
         }
 
         
-        panelData.innerHTML += "<p>Que desea hacer ahora?</p>";
+        setTimeout(function () {
+            panelData.innerHTML = "Que desea hacer ahora? ";
+        }, 3000);
+       
+        
     } else {
         panelData.innerHTML = "<p>Debes seleccionar un pokemon!</p>";
     }
@@ -80,6 +84,9 @@ function huir() {
         } else {
             panelData.innerHTML = "Has escapado con exito!";
             document.getElementById("btnPkmn").style.display = "none"; 
+            setTimeout(function () {
+                panelData.innerHTML = "Gracias por jugar";
+            }, 3000);
         }
 
         

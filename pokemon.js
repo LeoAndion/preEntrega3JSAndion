@@ -55,6 +55,48 @@ function modificarPokemon(pokemon, idAtaque, idDefensa, idVelocidad) {
 }
 
 
+ 
+function redirigirAModificar() {
+    Swal.fire({
+      title: '¿Está seguro que desea ir a modificar pokemones?',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonText: 'Sí, seguro',
+      cancelButtonText: 'No, no quiero'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: 'Pagina cargada!',
+          icon: 'success',
+        }).then(() => {
+          window.location.href = "modificar.html";
+        });
+      }
+    });
+  }
+
+  function redirigirAJugar() {
+    Swal.fire({
+      title: '¿Está seguro que desea poner a luchar animales indefensos?',
+      imageUrl: 'https://i.pinimg.com/originals/3c/02/8f/3c028f9ea7b1a390e71aca579b855b59.gif',
+      imageWidth: 400,
+      imageHeight: 200,
+      imageAlt: 'Custom image',
+      showCancelButton: true,
+      confirmButtonText: 'Sí, seguro',
+      cancelButtonText: 'No, no quiero'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        Swal.fire({
+          title: 'Pagina cargada!',
+          icon: 'success',
+        }).then(() => {
+          window.location.href = "jugar.html";
+        });
+      }
+    });
+  }
+  
 
 
 
