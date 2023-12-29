@@ -10,39 +10,34 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
     crossorigin="anonymous"></script>
-    <title>Inicio</title>
+    <title>Who's That Pokémon?</title>
 </head>
 <body>
-  
         <header>
-
-          
-         <div class="msjBienvenida" id="bienvenida">  </div>
+          <div class="msjBienvenida" id="bienvenida">  </div>
          <div>
 
           <button onclick="cambiarUser()" class="btn btn-primary">Cambiar de Usuario</button>
-        </div>
 
         </header>
 
-
-        <main class="container col-12 p-md-5">
-         <div class="text-center">
-           <img src="assets/png-clipart-pokemon-logo-pokemon-logo.png" class="heartbeat"><br>
-        </div>
-         
-         <div class="col-12">
-          <div class="text-center">
-            <button onclick="redirigirAJugar()" class="btn btn-primary">Jugar</button><br><br>
-            <button onclick="redirigirAModificar()" class="btn btn-primary">Modificar pokemones</button>
-            <br><br>
-            <a href="adivinaPKMN.html" class="btn btn-primary">Quien es ese pokemon</a><br><br>
-          <a href="datos.html" class="btn btn-primary">Ver Datos</a>
-          <a href="api.html" class="btn btn-primary">API PKMN</a>
-          </div>
-        </div>
+        
+        <main class="container col-12 p-md-5 text-center">
+          
 
 
+            <h1>Adivina el Pokémon</h1>
+
+            <button type="submit" class="btn btn-primary" onclick="jugar()">JUGAR</button><br><br>
+
+<div id="preguntaPokemon"></div>
+<div id="imagenPokemon"></div>
+
+           
+
+            <br> <br><br><br> <br> <div id="imagenPokemon"></div>
+
+             
     </main>
     <div class="container.sm">
         <footer class="py-3 my-4">
@@ -74,8 +69,9 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
-  <script src="pokemon.js"></script>
+ 
   <script src="ingreso.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="quienEs.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
 </html>
